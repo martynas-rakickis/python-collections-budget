@@ -19,11 +19,13 @@ class BudgetList():
     def __len__(self):
         return len(self.expenses) + len(self.overages)
 
-myBudgetList = BudgetList(1200)
 
 
-# if __name__ == "__main__":
-#     main()
+def main():
+    myBudgetList = BudgetList(1200)
+    
+if __name__ == "__main__":
+    main()
 
 expenses = Expense.Expenses()
 expenses.read_expenses('data/spending_data.csv')
